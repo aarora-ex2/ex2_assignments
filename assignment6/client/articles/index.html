@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hom Luv</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <style>
+    .article__container {
+      justify-content: center;
+    }
+    .article__title {
+      font-size: 32px;
+      text-align: center;
+    }
+    .img {
+      margin: 60px 0;
+      width: 100%;
+    }
+    .author {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <img
+        src="https://hl-resources.secure.footprint.net/assets/new-icon/homluv-logo-v1.svg"
+        alt="logo"
+      />
+      <ul>
+        <li>Explore</li>
+        <li>Map</li>
+        <li>Trends</li>
+        <li>Sign In</li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="main__title">
+        <p>
+          <a href="/client"> Home Advice & Inspiration </a>
+          | <span id="title"></span>
+        </p>
+        <div class="search">
+          <p>Search Articles</p>
+          <a href="/client">
+            <input
+              type="search"
+              class="search__input"
+              name="search"
+              id="search"
+              placeholder="Enter Keywords"
+            />
+          </a>
+        </div>
+      </div>
+
+      <section class="article__container">
+        <div class="article__content" id="article__container"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright © 2001-2022 Builders Digital Experience, LLC. HōmLuv.com is a
+        trademark of Builders Digital Experience, LLC and all other marks are
+        either trademarks or registered trademarks of their respective owners.
+        All rights reserved.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
