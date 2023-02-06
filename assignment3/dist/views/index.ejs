@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <input name="name" placeholder="Search with name...">
+      <input name="country" placeholder="Search with country...">
+      <select name="sort">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+      <button type="submit" onclick="handlesubmit()">Submit</button>
+    </form>
+    <br />
+    <br />
+    <% results.forEach(res => { %>
+      <img src=<%=res.picture.large%> alt="img"></img>
+      <h4><%= res.name.first + " " + res.name.last %> from <%= res.location.country %></h4>
+    <% })%>
+
+  </body>
+  <script>
+    function handlesubmit(e) {
+      e.preventDefault()
+    }
+  </script>
+</html>
