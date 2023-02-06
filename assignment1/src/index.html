@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX2</title>
+    <!-- stylesheets linking start -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/navbar.css" />
+    <link rel="stylesheet" href="./assets/styles/blog-post.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <!-- stylesheets linking end -->
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="home">
+      <div class="header__menu">
+        <p class="subs">Subscribe</p>
+        <a href="#">
+          <h1 class="header__title title">Large</h1>
+        </a>
+        <div class="header__right">
+          <img class="icon" src="./assets/icons/search.svg" alt="search" />
+          <button id="signup" class="header__signup">Sign Up</button>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li><a href="#">World</a></li>
+          <li><a href="#">US</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Opinion</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Style</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </nav>
+      <!-- navbar end -->
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <!-- hero Section start-->
+      <section class="hero__section">
+        <div class="hero__caption">
+          <h1 class="title"><em>Title of a longer featured blog post</em></h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            eveniet minima possimus, repellendus dolore distinctio in corrupti
+            nisi nemo sit!
+          </p>
+          <h4>
+            <a href="#"> Continue reading... </a>
+          </h4>
+        </div>
+      </section>
+      <!-- hero Section end-->
+
+      <!-- blog cards start -->
+      <section class="blog__posts">
+        <figure class="post">
+          <figcaption>
+            <h5 class="tag-blue">World</h5>
+            <h3 class="title">Featured post</h3>
+            <span>Nov 12</span>
+            <p>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+            <a href="#">Continue Reading</a>
+          </figcaption>
+          <div class="img__container">
+            <img
+              src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="post"
+            />
+            <p class="thumbnail">Thumbnail</p>
+          </div>
+        </figure>
+        <figure class="post">
+          <figcaption>
+            <h5 class="tag-green">Design</h5>
+            <h3 class="title">Post title</h3>
+            <span>Nov 11</span>
+            <p>
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+            <a href="#">Continue Reading</a>
+          </figcaption>
+          <div class="img__container">
+            <img
+              src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="post"
+            />
+            <p class="thumbnail">Thumbnail</p>
+          </div>
+        </figure>
+      </section>
+      <!-- blog cards end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <p>Album example is &#169; <span id="date"></span></p>
+      <a href="#home">Back to top</a>
+    </footer>
+    <!-- footer end -->
+
+    <!-- javascript script linking start -->
+    <script src="./assets/scripts/index.js"></script>
+    <!-- javascript script linking end -->
+  </body>
+</html>

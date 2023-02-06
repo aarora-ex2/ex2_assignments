@@ -1,0 +1,36 @@
+.navbar {
+  width: 100%;
+}
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.navbar__list li a {
+  cursor: pointer;
+  color: var(--lightgrey);
+  transition: 300ms all ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.navbar__list li a:hover {
+  color: var(--darkgrey);
+  border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar {
+    width: calc(100% - 80px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    overflow-x: scroll;
+    position: relative;
+  }
+  .navbar__list li {
+    margin-right: 12px;
+  }
+}

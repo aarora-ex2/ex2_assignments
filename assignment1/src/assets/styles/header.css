@@ -1,0 +1,43 @@
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  height: 60px;
+}
+.subs {
+  cursor: pointer;
+}
+.header__title {
+  color: var(--darkgrey);
+}
+.header__signup {
+  color: var(-- lightgrey);
+  padding: 3px 8px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+}
+.header__signup:hover {
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.header__right span {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 20px;
+  }
+}
