@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 72rem;
+  padding: 0 16px;
+  margin: 32px auto;
+}
+table {
+  text-align: center;
+}
+td {
+  padding: 12px;
+}
+th {
+  padding: 6px;
+  cursor: pointer;
+}

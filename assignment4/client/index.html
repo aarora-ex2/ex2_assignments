@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    tbody,
+    tr {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    h5,
+    p {
+      margin: 0;
+      padding: 0.1rem;
+    }
+    form {
+      margin: 1rem;
+    }
+    form button,
+    input[type="submit"] {
+      border: none;
+      background-color: rgba(227, 35, 35, 0.226);
+      padding: 0.1rem 0.2rem;
+      border-radius: 0.2rem;
+      margin: 0 0.2rem;
+    }
+  </style>
+  <body onload="fetch_data()">
+    <input
+      type="text"
+      id="searchInput"
+      onkeyup="search()"
+      placeholder="Search.."
+      title="Search Bar"
+    />
+    <table id="myTable">
+      <tr>
+        <th>Image</th>
+        <th onclick="sortTable(1)">Name</th>
+        <th onclick="sortTable(2)">City</th>
+        <th onclick="sortTable(3)">State</th>
+        <th onclick="sortTable(4)">Country</th>
+        <th onclick="sortTable(5)">Username</th>
+      </tr>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
